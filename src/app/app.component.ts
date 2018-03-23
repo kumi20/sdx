@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { EventService } from './event.service'
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+    
+    constructor(private toastrService: EventService) {}
+    
+    test(){
+        this.toastrService.wyswietlInfo('success', 'test error');
+    }
+    
 }
