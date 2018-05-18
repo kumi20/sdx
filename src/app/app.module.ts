@@ -14,7 +14,7 @@ import { EventService } from './event.service';
 import { routerModule} from './app.routing';
 
 import { DashboardComponent} from './dashboard/dashboard.component';
-
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +28,10 @@ import { DashboardComponent} from './dashboard/dashboard.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
-    MDBBootstrapModulePro.forRoot()
+    MDBBootstrapModulePro.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCWGwAYym9aNgPYwihVhdaB-pxnoE03-D4'
+    })
   ],
   providers: [ApiService, EventService],
   bootstrap: [AppComponent],

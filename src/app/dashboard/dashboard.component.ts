@@ -13,7 +13,12 @@ export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy{
   @ViewChildren('dynamiCom') dynamiCom;  
   id: number = 1;
   private sub: any;
-    
+  maile = {
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+  };  
     
   constructor(private CmsService: ApiService, private event: EventService, private route: ActivatedRoute, private _route: Router) { }
     
@@ -35,6 +40,17 @@ export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy{
     
  ngOnDestroy(){
      this.sub.unsubscribe();
- }    
+ } 
+ 
+ sendMaile(){
+     if( this.maile.name === '' || this.maile.email === '' || this.maile.message === '' || this.maile.subject === '') this.event.wyswietlInfo('info','Proszę uzupełnić wszystkie pola');
+     else{
+         let reg = /^[a-z\d]+[\w\d.-]*@(?:[a-z\d]+[a-z\d-]+\.){1,5}[a-z]{2,6}$/i;
+         if(!reg.test(this.maile.email)) this.event.wyswietlInfo('info','Wprowadź poprawny adres email');
+         else{
+             console.log('mail', this.maile)
+         }
+     }
+ }
     
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, OnInit, AfterViewInit } from '@angular/core';
 import { EventService } from './event.service'
 
 
@@ -7,13 +7,19 @@ import { EventService } from './event.service'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+
+export class AppComponent implements AfterViewInit{
   title = 'app';
-    
+  @ViewChild('fluid') fluid;
+
     constructor(private toastrService: EventService) {}
-    
-    test(){
-        this.toastrService.wyswietlInfo('success', 'test error');
+
+    ngAfterViewInit(){
+      if (localStorage.getItem('mbjGrupa')===null){
+          localStorage.setItem('mbjGrupa', 'cookie');
+          this.fluid.show();
+      }
+      
     }
     
 }

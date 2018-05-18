@@ -17,6 +17,11 @@ export class ApiService {
       this.headers.append("Content-Type", "application/json");
   }
 
+  post(uri, data){
+      this._http.post(this.uri + uri, data).map(
+          response=> response.json()
+      )
+  }
 
 }
 

@@ -1,12 +1,243 @@
-<div class="container">
-    <div class="row"><h1>Witam</h1></div>
-    <div class="row"><p>Kuba <i class="fa fa-address-book"></i>
+
+<section id="top">
+<!--Main Navigation-->
+    <!--Main Navigation-->
+    <header>
+
+        <!--Navbar-->
+        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <links>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item waves-light" mdbWavesEffect>
+                        <a class="nav-link" href="#top" mdbPageScroll [pageScrollDuration]="1000">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item waves-light" mdbWavesEffect>
+                        <a class="nav-link" href="#about" mdbPageScroll [pageScrollDuration]="1000">Oferta</a>
+                    </li>
+                    <li class="nav-item waves-light" mdbWavesEffect>
+                        <a class="nav-link" href="#contact" mdbPageScroll [pageScrollDuration]="1000">Kontakt</a>
+                    </li>
+                </ul>
+            </links>
+        </mdb-navbar>
     
-    <button (click)="test()" class="btb btn-success">test</button>
+        <!--Intro Section-->
+        <section class="view intro-2">
+            <div class="full-bg-img mask rgba-stylish-strong">
+                    <div class="container flex-center">
+                            <div class="row pt-5 mt-3">
+                                <div class="col-md-12 mb-3">
+                                    <div class="intro-info-content text-center">
+                                        <img src="../assets/logo.png" class="logo">
+                                        <h1 class="font-up mb-5 mt-1 font-bold wow fadeInDown" data-wow-delay="0.3s">MBJ GRUPA sp. z o.o.</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </section>
 
-</p></div>
-</div>
+    </header>
+<!--Main Navigation-->
+</section>
+
+<main>
+    <div class="container">
+        <section id="about">
+            <h2 class="black-text text-uppercase font-weight-bold mb-3 pt-4 mt-5 wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">O nas</h2>
+            <hr class="mb-5">
+            <div class="row mt-5 mb-2">
+
+                <!-- Grid column -->
+                <div class="col-lg-5 col-md-12 mb-2 mr-auto wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">
+                       
+                    <!-- Image -->
+                    <img src="../assets/slide4.png" class="img-fluid z-depth-1-half" alt="ochrona">
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-lg-6 col-md-12 mb-4 wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">
+                    <h4>Witamy na stronie firmy MBJ GRUPA Sp. z o.o.</h4>    
+                    <!-- Description -->
+                    <p align="justify" class="grey-text-3">MBJ Grupa Sp. z o.o. stanowi wyspecjalizowaną grupę firm usługowych, MBJ Security Sp. z o.o oraz Shadow Group Sp. z o.o. ukierunkowanych na realizację potrzeb i spełnianie oczekiwań nowoczesnego Klienta w obszarze bezpieczeństwa oraz zapobiegania stratom.</p>
+                    <p align="justify" class="grey-text-3 font-bold">Działamy na podstawie koncesji MSW nr L-0235/14 i świadczymy usługi na terenie całej Polski.</p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+        </section>
+    </div>    
+        
+        <div class="streak streak-photo streak-long-2" style="background-image: url('../assets/slide3.png');">
+            <div class="rgba-blue-strong">
+                <div class="container text-center white-text">
+                    <!--First row-->
+                    <div class="row text-white text-center wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">
+
+                        <!--First column-->
+                        <div class="col-md-12 mt-12" >
+                            <div class="wow fadeIn" data-wow-delay="0.2s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.2s; text-align: justify">
+                                
+                                <!--Section: Features v.1-->
+                                <section class="text-center">
+
+                                    <!--Section heading-->
+                                    <h3 class="py-5 font-weight-bold">MBJ Grupa Sp. z o.o.</h3>
+                                    <!--Section description-->
+                                    <p class="px-5 mb-5 pb-3 lead white-text">Kopleksowe usługi z zakresu bezpieczeństwa.</p>
+
+                                    <!--Grid row-->
+                                    <div class="row">
+
+                                        <!--Grid column-->
+                                        <div class="col-md-4">
+                                            <i class="fa fa-handshake-o fa-3x red-text"></i>
+                                            <h5 class="font-weight-bold mt-3">Profesjonalizm</h5>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-md-4">
+                                            <i class="fa fa-line-chart fa-3x cyan-text"></i>
+                                            <h5 class="font-weight-bold mt-3">Skuteczność</h5>
+                                        </div>
+                                        <!--Grid column-->
+
+                                        <!--Grid column-->
+                                        <div class="col-md-4">
+                                            <i class="fa fa-ravelry fa-3x orange-text"></i>
+                                            <h5 class="font-weight-bold mt-3">Odpowiedzialność</h5>
+                                        </div>
+                                        <!--Grid column-->
+
+                                    </div>
+                                    <!--Grid row-->
+
+                                </section>
+                                <!--Section: Features v.1-->    
+    
+
+                            </div>
+                        </div>
+                        <!--/First column-->
 
 
+                    </div>
+                    <!--/First row-->
 
+                </div>
+            </div>
+        </div>      
+    <div class="container">      
+        <!--Section: Contact v.1-->
+        <section id="contact" class="pb-5">
+             
+            <!--Section heading-->
+            <h2 class="black-text text-uppercase font-weight-bold mb-3 pt-4 mt-5 wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">Kontakt</h2>
+            <hr class="mb-5">
 
+            <!--Section description-->
+            <p class="pb-4 wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">Prosimy wypełnić formularz, a skontaktujemy się z Państwem.
+                W przypadku wątpliwości bądź pytań proszę o kontakt telefoniczny pod numer 535-998-336</p>
+
+            <br>
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-lg-5 mb-4 wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">
+
+                    <!--Form with header-->
+                    <div class="card">
+
+                        <div class="card-body">
+                            <!--Header-->
+                            <div class="form-header blue accent-1">
+                                <h3>
+                                    <i class="fa fa-envelope"></i> Napisz do nas:</h3>
+                            </div>
+                            
+                            <!--Body-->
+                            <div class="md-form">
+                                <i class="fa fa-user prefix grey-text"></i>
+                                <input mdbActive type="text" id="form3" class="form-control" [(ngModel)]="maile.name">
+                                <label for="form3">Imię</label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input mdbActive type="email" id="form2" class="form-control" [(ngModel)]="maile.email">
+                                <label for="form2">Email</label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-tag prefix grey-text"></i>
+                                <input mdbActive type="text" id="form32" class="form-control" [(ngModel)]="maile.subject">
+                                <label for="form34">Temat</label>
+                            </div>
+
+                            <div class="md-form">
+                                <i class="fa fa-pencil prefix grey-text"></i>
+                                <textarea mdbActive type="text" id="form8" class="md-textarea" [(ngModel)]="maile.message"></textarea>
+                                <label for="form8">Wiadomość</label>
+                            </div>
+
+                            <div class="text-center">
+                                <button class="btn btn-light-blue waves-light" mdbWavesEffect (click)="sendMaile()">Wyślij</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--Form with header-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.4s" style="visibility: visible; animation-name: fadeIn; animation-delay: 0.4s;">
+
+                    <!--Google map-->
+                    <agm-map class="z-depth-1-half map-container" style="height: 400px;" [latitude]="52.1780333" [longitude]="20.943273099999942" [zoom]="16">
+                        <agm-marker [latitude]="52.1780333" [longitude]="20.943273099999942"></agm-marker>
+                    </agm-map>
+
+                    <br>
+                    <!--Buttons-->
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <a class="btn-floating blue accent-1 waves-light" mdbWavesEffect>
+                                <i class="fa fa-map-marker"></i>
+                            </a>
+                            <p>02-269 Warszawa</p>
+                            <p>Skibicka 29</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a class="btn-floating blue accent-1 waves-light" mdbWavesEffect>
+                                <i class="fa fa-phone"></i>
+                            </a>
+                            <p>+ 48 535-998-336</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a class="btn-floating blue accent-1 waves-light" mdbWavesEffect>
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                            <p>mbj@mbjgrupa.com.pl</p>
+                            <p> biuro@mbjgrupa.com.pl</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+
+        </section>
+        <!--Section: Contact v.1-->
+    
+    </div>
+</main>
