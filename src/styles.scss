@@ -83,6 +83,19 @@ h6 {
     margin-bottom: 100px;
 }
 
+ul li{
+        text-align: left;
+    }
+
+.centerDiv{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.text-justife{
+    text-align: justify
+}
+
 @media (max-width: 740px) {
     .img-fluid{
         margin-bottom: 20px;
@@ -91,12 +104,52 @@ h6 {
     #about{
         margin-bottom: 10px;
     }
+    
+    .white-text{
+        text-align: justify;
+    }
+    
+    ul li{
+        text-align: left;
+    }
+    
+    .streak.streak-long-2{
+        height: 1800px;
+    }
+    
+    .centerDiv{
+        width: 280px;
+        margin: 0 auto;
+    }
+    
+    .text-justife{
+        text-align: left
+    }
+
 }
 
-@media (max-width: 1024px){
+
+@media (min-width: 744px){
     #about{
         margin-bottom: 10px;
     }
+    
+    ul li{
+        text-align: left;
+    }
+    
+    .streak.streak-long-2{
+        height: 1050px;
+    }
+    .centerDiv{
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+    .text-justife{
+        text-align: left
+    }
+
 }
 
 
