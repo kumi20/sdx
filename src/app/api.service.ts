@@ -22,6 +22,12 @@ export class ApiService {
           response=> response.json()
       )
   }
+    
+  send(uri, data){
+      return this._http.post(uri, data).map(
+            response=> response.json()
+      )
+  }    
 
 }
 

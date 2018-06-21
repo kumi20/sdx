@@ -48,7 +48,18 @@ export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy{
          let reg = /^[a-z\d]+[\w\d.-]*@(?:[a-z\d]+[a-z\d-]+\.){1,5}[a-z]{2,6}$/i;
          if(!reg.test(this.maile.email)) this.event.wyswietlInfo('info','Wprowadź poprawny adres email');
          else{
-             console.log('mail', this.maile)
+             this.CmsService.send(`http://kumi20.webd.pl/mbjgrupa/wyslij.php`, this.maile).subscribe(
+                response =>{
+                    this.event.wyswietlInfo('success',"Wiadomość wysłana");
+                },
+                error =>{
+                    this.event.wyswietlInfo('error',"Błąd wysyłania wiadomości");
+                 }
+             )
+             this.maile.name = '';
+             this.maile.email = '';
+             this.maile.message = '';
+             this.maile.subject = '';
          }
      }
  }
