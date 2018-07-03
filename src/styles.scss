@@ -49,7 +49,7 @@ body{
 }
 
 .intro-2 {
-    background: url("./assets/slide2.png")no-repeat center center;
+    background: url("./assets/homme-seculogo.png")no-repeat center center;
     background-size: cover;
 }
 .view {
@@ -97,6 +97,9 @@ ul li{
 }
 
 @media (max-width: 740px) {
+    p{
+        text-align: left;
+    }
     .img-fluid{
         margin-bottom: 20px;
     }
